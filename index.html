@@ -395,7 +395,7 @@
 
 		</div>
 
-		<form method="post" action="" data-aos="fade-up"
+		<!-- <form method="post" action="" data-aos="fade-up"
 		data-aos-easing="linear"
 		data-aos-duration="1000">
 
@@ -419,13 +419,48 @@
 
 		<input type="submit" name="enviar" value="Enviar">
 
-	</form>
+	</form> -->
 
 	<!-- <?php	
 
 	// include("correo.php");
 		
 	?> -->
+
+	
+	<div>
+		<div>
+			<form id="formulariowtsp" action="" class="formulariowtsp" data-aos="fade-up"
+			data-aos-easing="linear"
+			data-aos-duration="1000">
+			<a style="display: none;" href="https://api.whatsapp.com/send?phone=5215581853675&text=hola%20gustavo" target="_blank">Envia un mensaje via WhatsApp</a>
+
+			<label for="name">Nombre:</label>
+			<input type="text" id="name" name="name" placeholder="Ingresa tu nombre..." required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico..." required>
+
+			<label for="service">Servicios:</label>
+			<select name="service" id="service">
+
+				<option selected="true" disabled="disabled">Seleccionar un servicio</option>
+				<option value="Fotografía corporativa">Fotografía corporativa</option>
+				<option value="Diseño Web">Diseño Web</option>
+				<option value="Desarrollo Web">Desarrollo Web</option>
+				<option value="Estrategia de Mercado">Estrategia de Mercado</option>
+				<option value="Otros">Otros</option>
+
+			</select>
+
+			<label for="subject">Asunto:</label>
+			<textarea name="subject" id="subject" cols="10" rows="10" placeholder="Ingresa tu mensaje aquí..."></textarea>
+
+			<button type="submit" id="sendbttn" class="btnwtsp"><i class="fab fa-whatsapp" id="icon-wts"></i> ENVIAR MENSAJE</button>
+			</form>
+		</div>
+		<!-- <img id="icon-whatsapp" class="image-icon-whatsapp" src="images/whatsapp.webp" alt="" width="70"> -->
+	</div>
 
 </div>
 

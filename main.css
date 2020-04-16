@@ -1,4 +1,4 @@
-/*Start global*/
+Start global*/
 
 *{
 	margin:0;
@@ -488,11 +488,11 @@ form label{
 input,
 select,
 textarea{
-	width: 100%;
-	padding: 1rem;
-	margin-bottom: 5px;
-	border: none;
-	outline-color: #fd57bf;
+	width: 97%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: 0.1rem solid black;
+    outline-color: #fd57bf;
 }
 
 input[type="submit"]{
@@ -509,6 +509,115 @@ input[type="submit"]:hover{
 	color: #221e3f;
 	background-color: #ffe838;
 }
+
+
+/*Api WhatsApp*/
+
+.image-icon-whatsapp{
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	transition: all 0.2s;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 12rem;
+	text-align: center;
+	z-index: 1;
+}
+
+/*.image-icon-whatsapp:hover{
+	transform: scale(0.9);
+}
+
+.image-icon-whatsapp:active{
+	transform: scale(0.8);
+}*/
+
+.formulariowtsp{
+
+	width: 70%;
+	margin:0 auto;
+	border-radius: 5px;
+	position: relative;
+	bottom: 65px;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.22);
+	background:white;
+	padding: 10px 20px;
+	
+}
+
+.inputwts{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	font-family: arial;
+	font-size: 13px;
+	border-radius: 5px;
+	border:1px solid rgba(0,0,0,0.19);
+	color: #666;
+
+
+}
+
+.inputwts:focus{
+	outline: none;
+}
+
+.textareawts{
+	width: 100%;
+	min-width: 100%;
+	box-sizing: border-box;
+	height: 140px;
+	max-height: 140px;
+	min-height: 140px;
+	font-family: arial;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid rgba(0,0,0,0.19);
+	color: #666;
+
+
+}
+
+.textareawts:focus{
+	outline: none;
+}
+
+.newmessagewts{
+	font-family: arial;
+	display: block;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 10px;
+	color: black;
+}
+.btnwtsp{
+	position: relative;
+	left: 25%;
+	width: 50%;
+	border: none;
+	padding: 5px;
+	background: #0B3B0B;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 2rem;
+	transition: all 650ms;
+}
+
+#icon-wts:hover{
+	color:white;
+}
+
+.btnwtsp:hover{
+	background: #00a82d;
+}
+
+
 
 /*End contact*/
 
@@ -696,4 +805,4 @@ input[type="submit"]:hover{
 
 }
 
-/*End media queries*/
+/*End media queries
