@@ -969,10 +969,26 @@ input[type="submit"]:hover{
 			margin-right: -1.5rem;
 		}
 
+		.timeline ul{
+			width: 45%;
+		}
 
+		.timeline h1{
+			font-size: 1.8rem;
+		}
+
+		.timeline p{
+			font-size: 1.4rem;
+		}
+
+		.timeline .date::before {
+			font-size: .8rem;
+		}
 
 		.btnwtsp{
-			width: 60%;
+			position: relative;
+			left: 4rem;
+			width: 70%;
 		}
 
 
