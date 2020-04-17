@@ -303,18 +303,27 @@ a.nav-link{
 	bottom: 12rem;
 }
 
-.fa-chevron-down{
-	color:white;
-	font-size: 2.5rem;
-	bottom: 30px;
-	position: relative;
+#down{
+
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-color: #eee;
+	bottom: 5rem;
+	left: 50%;
+	border-radius: 100%;
+	display: flex;
+	animation: pulse 2s infinite;
+	cursor: pointer;
+
 }
 
-.fa-chevron-down:hover{
-	color: #ffe838;
-	font-size: 3rem;
-
+#down i{
+	color: #16162d;
+	font-size: 2rem;
+	margin: auto;
 }
+
 
 /*End header*/
 
@@ -884,6 +893,13 @@ input[type="submit"]:hover{
 			font-size: 1.4rem;
 			bottom: 50px;
 		}
+
+		#down{
+
+			bottom: -5rem;
+			left: 45%;
+		}
+
 
 		.nav-link{
 			font-size: 3.5rem;
