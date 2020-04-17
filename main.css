@@ -186,7 +186,7 @@ header{
 	width: 100%;
 	height: 100vh;
 	position: fixed;
-	top:100vh;
+	top:120vh;
 	z-index: 50;
 	background-color: #16162d;
 	border-bottom-right-radius: 100%;
@@ -760,7 +760,27 @@ input[type="submit"]:hover{
 
 	/*Start media queries*/
 
+	@media screen and (max-width: 1024px){
+		input,
+		select,
+		textarea{
+			width: 96%;
+
+		}
+
+		.timeline ul{
+			width: 50%;
+		}
+	}
+
 	@media screen and (max-width: 768px){
+
+		input,
+		select,
+		textarea{
+			width: 94%;
+
+		}
 
 		body{
 			background: url("images/sitebg2.jpg") no-repeat center fixed;
@@ -823,6 +843,7 @@ input[type="submit"]:hover{
 
 		.timeline ul{
 			margin: 0 0 0 auto;
+			width: 65%;
 		}
 
 		.timeline .date::before{
@@ -837,7 +858,15 @@ input[type="submit"]:hover{
 
 	}
 
-	@media screen and (max-width: 565px){
+	@media screen and (max-width: 576px){
+
+		input,
+		select,
+		textarea{
+			width: 92%;
+
+		}
+
 		.menu-toggler{
 			top: 2rem;
 			right: 2rem;
@@ -845,6 +874,10 @@ input[type="submit"]:hover{
 
 		.landing-text h1{
 			font-size: 8rem;
+		}
+
+		.social-media{
+			margin-right: 5rem;
 		}
 
 		.landing-text h6{
@@ -879,6 +912,10 @@ input[type="submit"]:hover{
 			width: 85%;
 		}
 
+		.timeline ul{
+			width: 50%;
+		}
+
 		.timeline p{
 			font-size: 1.9rem;
 		}
@@ -899,6 +936,17 @@ input[type="submit"]:hover{
 
 	@media screen and (max-width:450px){
 
+		input,
+		select,
+		textarea{
+			width: 90%;
+
+		}
+
+		.nav-list{
+			width: 66%;
+		}
+
 		.portfolio-img{
 			margin: 0 0 2rem 0;
 			order: 1;
@@ -910,7 +958,7 @@ input[type="submit"]:hover{
 		}
 
 		.about-heading h1 {
-			font-size: 3.5rem;
+			font-size: 3.1rem;
 		}
 
 		.social-media{
@@ -920,6 +968,16 @@ input[type="submit"]:hover{
 			font-size: 2rem;
 			margin-right: -1.5rem;
 		}
+
+
+
+		.btnwtsp{
+			width: 60%;
+		}
+
+
+
+		
 
 
 	}
