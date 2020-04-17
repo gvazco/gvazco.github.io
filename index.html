@@ -19,8 +19,11 @@
 </head>
 <body>
 
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+
 	<header>
-		
+
 		<div class="menu-toggler">
 			<div class="bar bar-half start"></div>
 			<div class="bar"></div>
@@ -50,11 +53,11 @@
 				<li>
 					<a href="#experience" class="nav-link">Experiencia</a>
 				</li>
-				
+
 				<li>
 					<a href="#contact" class="nav-link">Contacto</a>
 				</li>
-				
+
 			</ul>
 		</nav>
 
@@ -79,6 +82,8 @@
 	</div>
 
 </header>
+
+
 
 <section class="about" id="about">
 
@@ -112,7 +117,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://www.facebook.com/gvazcocronista" class="icon-link">
 
 							<i class="fab fa-facebook"></i>
 
@@ -122,7 +127,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://www.instagram.com/g_vazco/" class="icon-link">
 
 							<i class="fab fa-instagram"></i>
 
@@ -132,7 +137,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://www.linkedin.com/in/gustavo-vazco-cronista/" class="icon-link">
 
 							<i class="fab fa-linkedin-in"></i>
 
@@ -142,7 +147,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://github.com/gvazco" class="icon-link">
 
 							<i class="fab fa-github"></i>
 
@@ -152,7 +157,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://wa.me/5215581853675" class="icon-link">
 
 							<i class="fab fa-whatsapp"></i>
 
@@ -162,7 +167,7 @@
 
 					<li>
 
-						<a href="#" class="icon-link">
+						<a href="https://blog.allsdigital.net" class="icon-link">
 
 							<i class="fas fa-blog"></i>
 
@@ -444,76 +449,51 @@
 
 		</div>
 
-		<!-- <form method="post" action="" data-aos="fade-up"
-		data-aos-easing="linear"
-		data-aos-duration="1000">
 
-		<label for="name">Nombre:</label>
-		<input type="text" id="name" name="name" placeholder="Ingresa tu nombre..." required>
+		<div> 
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico..." required>
+			<div>
 
-		<label for="service">Servicios:</label>
-		<select name="service" id="service">
+				<form id="formulariowtsp" action="" class="formulariowtsp" data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1000">
+				<a style="display: none;" href="https://api.whatsapp.com/send?phone=5215581853675&text=hola%20gustavo" target="_blank">Envia un mensaje via WhatsApp</a>
 
-			<option value="">Diseño Web</option>
-			<option value="">Desarrollo Web</option>
-			<option value="">Estrategia de Mercado</option>
+				<input type="text" id="name" name="name" placeholder="Ingresa tu nombre..." required>
 
-		</select>
 
-		<label for="subject">Asunto:</label>
-		<textarea name="subject" id="subject" cols="10" rows="10" placeholder="Ingresa tu mensaje aquí..."></textarea>
+				<input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico..." required>
 
-		<input type="submit" name="enviar" value="Enviar">
 
-	</form> -->
+				<select name="service" id="service">
 
-	<!-- <?php	
+					<option selected="true" disabled="disabled">Seleccionar un servicio</option>
+					<option value="Fotografía corporativa">Fotografía corporativa</option>
+					<option value="Diseño Web">Diseño Web</option>
+					<option value="Desarrollo Web">Desarrollo Web</option>
+					<option value="Estrategia de Mercado">Estrategia de Mercado</option>
+					<option value="Otros">Otros</option>
 
-	// include("correo.php");
-		
-	?> -->
+				</select>
 
-	
-	<div>
-		<div>
-			<form id="formulariowtsp" action="" class="formulariowtsp" data-aos="fade-up"
-			data-aos-easing="linear"
-			data-aos-duration="1000">
-			<a style="display: none;" href="https://api.whatsapp.com/send?phone=5215581853675&text=hola%20gustavo" target="_blank">Envia un mensaje via WhatsApp</a>
 
-			<label for="name">Nombre:</label>
-			<input type="text" id="name" name="name" placeholder="Ingresa tu nombre..." required>
+				<textarea name="subject" id="subject" cols="10" rows="10" placeholder="Ingresa tu mensaje aquí..."></textarea>
 
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico..." required>
+				<button type="submit" id="sendbttn" class="btnwtsp"><i class="fab fa-whatsapp" id="icon-wts"></i> ENVIAR MENSAJE</button>
 
-			<label for="service">Servicios:</label>
-			<select name="service" id="service">
+			</form>
 
-				<option selected="true" disabled="disabled">Seleccionar un servicio</option>
-				<option value="Fotografía corporativa">Fotografía corporativa</option>
-				<option value="Diseño Web">Diseño Web</option>
-				<option value="Desarrollo Web">Desarrollo Web</option>
-				<option value="Estrategia de Mercado">Estrategia de Mercado</option>
-				<option value="Otros">Otros</option>
+		</div>
 
-			</select>
-
-			<label for="subject">Asunto:</label>
-			<textarea name="subject" id="subject" cols="10" rows="10" placeholder="Ingresa tu mensaje aquí..."></textarea>
-
-			<button type="submit" id="sendbttn" class="btnwtsp"><i class="fab fa-whatsapp" id="icon-wts"></i> ENVIAR MENSAJE</button>
-		</form>
 	</div>
-	<!-- <img id="icon-whatsapp" class="image-icon-whatsapp" src="images/whatsapp.webp" alt="" width="70"> -->
-</div>
 
 </div>
+
+
 
 </section>
+
+
 
 <footer class="copyright">
 
@@ -525,9 +505,23 @@
 
 </footer>
 
+<script>
+
+	let progress = document.getElementById('progressbar');
+
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+	window.onscroll = function(){
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+
+	}
+
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>

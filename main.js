@@ -35,6 +35,7 @@ $(document).ready(function () {
 		once:true
 	});
 
+
 	var IconWhatsapp = document.querySelector('#icon-whatsapp');
 	var formulariowtsp = document.getElementById('formulariowtsp');
 	var closemodal = document.querySelector('.closemodal');

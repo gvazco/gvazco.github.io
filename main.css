@@ -22,6 +22,69 @@ section{
 	padding: 6rem 0 ;
 }
 
+::-webkit-scrollbar
+{
+	width: 0;
+
+}
+
+#scrollPath
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255, 255, 0.05);
+	z-index: 200;
+}
+
+#progressbar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	/*height: 100%;*/
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	animation: animate 5s linear infinite;
+	z-index: 250;
+
+}
+
+@keyframes animate{
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressbar:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	filter: blur(10px);
+}
+
+#progressbar:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	filter: blur(30px);
+}
+
 a{
 	text-decoration: none;
 	color #eee;
@@ -506,10 +569,15 @@ input,
 select,
 textarea{
 	width: 97%;
-	padding: 1rem;
-	margin-bottom: 5px;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
 	border: 0.1rem solid black;
 	outline-color: #fd57bf;
+	font-size: 1.8rem;
+}
+
+select#service{
+	width: 101%;
 }
 
 input[type="submit"]{
@@ -560,8 +628,8 @@ input[type="submit"]:hover{
 		position: relative;
 		bottom: 65px;
 		box-shadow: 0 2px 20px 0 rgba(0,0,0,0.22);
-		background:white;
-		padding: 10px 20px;
+		background:rgba(255,255,255,0.1);
+		padding: 20px;
 
 	}
 
@@ -569,6 +637,7 @@ input[type="submit"]:hover{
 		width: 100%;
 		box-sizing: border-box;
 		padding: 5px;
+		margin-bottom: 10px;
 		font-family: arial;
 		font-size: 13px;
 		border-radius: 5px;
@@ -614,16 +683,21 @@ input[type="submit"]:hover{
 	}
 	.btnwtsp{
 		position: relative;
+		display: inline-block;
 		left: 25%;
 		width: 50%;
 		border: none;
-		padding: 5px;
-		background: #0B3B0B;
-		border-radius: 5px;
+		padding: 12px 36px;
+		letter-spacing: 2px;
+		margin-top: 10px;
 		color: white;
 		cursor: pointer;
 		font-size: 2rem;
-		transition: all 650ms;
+
+		animation: pulse 3s infinite;
+
+		border-radius: 40px;
+		background: linear-gradient(90deg, #4267b2, #fd57bf)
 	}
 
 	#icon-wts:hover{
@@ -631,7 +705,7 @@ input[type="submit"]:hover{
 	}
 
 	.btnwtsp:hover{
-		background: #00a82d;
+		background: linear-gradient(90deg, #fd57bf, #4267b2)
 	}
 
 
@@ -824,6 +898,12 @@ input[type="submit"]:hover{
 	}
 
 	@media screen and (max-width:450px){
+
+		.portfolio-img{
+			margin: 0 0 2rem 0;
+			order: 1;
+			width: 80%;
+		}
 
 		.about-details{
 			width: 100%;
